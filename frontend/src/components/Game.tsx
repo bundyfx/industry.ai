@@ -1002,7 +1002,7 @@ const Game = ({ userId, walletAddress }: { userId: string, walletAddress: string
                 <div className="h-auto">
                     <RecursiveChat chatMode={chatMode} setChatMode={setChatMode} />
                 </div>
-                <div className="flex-1 overflow-hidden rounded-lg">
+                <div className="flex-1 overflow-hidden rounded-lg shadow">
                     <Chat
                         messages={chatMessages}
                         onSendMessage={handleGlobalMessage}
@@ -1012,7 +1012,7 @@ const Game = ({ userId, walletAddress }: { userId: string, walletAddress: string
             </div>
 
             {/* Middle Column - Game Canvas */}
-            <div className="relative flex-1 order-first md:order-none h-full flex items-center justify-center overflow-hidden rounded-lg">
+            <div className="relative flex-1 order-first md:order-none h-full flex items-center justify-center overflow-hidden rounded-lg shadow">
                 {!isInitialized ? (
                     <div>Loading...</div>
                 ) : (
@@ -1050,8 +1050,8 @@ const Game = ({ userId, walletAddress }: { userId: string, walletAddress: string
             </div>
 
             {/* Right Column - Notifications and Agent Details */}
-            <div className="hidden md:block w-80 h-full space-y-4">
-                <div className="h-[60%] overflow-hidden rounded-lg">
+            <div className="hidden md:block w-80 h-full space-y-4 shadow">
+                <div className="h-[60%] overflow-hidden rounded-lg shadow">
                     <NotificationBoard notifications={notifications} />
                 </div>
                 <div className="h-[38%] overflow-hidden rounded-lg">

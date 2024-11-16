@@ -10,7 +10,7 @@ interface AgentDetailsProps {
 
 const AgentDetails = ({ ens, chain, resources = [] }: AgentDetailsProps) => {
     return (
-        <div className="bg-card rounded-lg p-4 h-full overflow-hidden">
+        <div className="bg-card rounded-lg p-4 h-full overflow-hidden shadow">
             <h2 className={`${pixelify_sans.className} text-xl mb-4 text-blue-900`}>Agent Details</h2>
 
             <div className="space-y-4">
