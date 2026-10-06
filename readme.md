@@ -1,4 +1,4 @@
-# Industry.ai
+# << - delete Industry.ai ~ >>
 
 ![industry.ai](./frontend/public/logo.png)
 
